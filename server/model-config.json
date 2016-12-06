@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../node_modules/loopback-ds-timestamp-mixin",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "product": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "price": {
+    "dataSource": "postgres",
+    "public": false
+  },
+  "user": {
+    "dataSource": "postgres",
+    "public": false
+  },
+  "user_product": {
+    "dataSource": "postgres",
+    "public": false
+  },
+  "browse_node": {
+    "dataSource": "postgres",
+    "public": false
+  }
+}

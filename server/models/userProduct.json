@@ -1,0 +1,23 @@
+{
+  "name": "user_product",
+  "plural": "user_products",
+  "properties": {},
+  "mixins": {
+    "TimeStamp": true
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "user_id"
+    },
+    "product": {
+      "type": "belongsTo",
+      "model": "product",
+      "foreignKey": "product_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

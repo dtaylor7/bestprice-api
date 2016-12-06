@@ -1,0 +1,24 @@
+{
+  "name": "browse_node",
+  "plural": "browse_nodes",
+  "properties": {
+    "browseNodeId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
+
+
+
+
+

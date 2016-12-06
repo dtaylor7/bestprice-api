@@ -1,0 +1,25 @@
+{
+  "name": "price",
+  "plural": "prices",
+  "properties": {
+    "price": {
+      "type": "number",
+      "postgresql": {
+        "dataType": "double precision"
+      }
+    }
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "validations": [],
+  "relations": {
+    "product": {
+      "type": "belongsTo",
+      "model": "product",
+      "foreignKey": "product_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

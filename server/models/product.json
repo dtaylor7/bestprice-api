@@ -1,0 +1,49 @@
+{
+  "name": "product",
+  "plural": "products",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "vendor_id": {
+      "type": "string"
+    },
+    "vendor": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "validations": [],
+  "relations": {
+    "prices": {
+      "type": "hasMany",
+      "model": "price",
+      "foreignKey": "product_id"
+    },
+    "users": {
+      "type": "hasMany",
+      "model": "product",
+      "foreignKey": "product_id",
+      "through": "user_product",
+      "keyThrough": "user_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
+
+
+
+
+

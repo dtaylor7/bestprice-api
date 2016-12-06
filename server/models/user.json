@@ -1,0 +1,24 @@
+{
+  "name": "user",
+  "plural": "users",
+  "properties": {
+    "email": {
+      "type": "string"
+    }
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "validations": [],
+  "relations": {
+    "products": {
+      "type": "hasMany",
+      "model": "product",
+      "foreignKey": "user_id",
+      "through": "user_product",
+      "keyThrough": "product_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
